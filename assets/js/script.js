@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  const currentYear = new Date().getFullYear();
+  $("#yearC").text(currentYear);
+
   $('a[href*="#"]').click(function (event) {
     if (
       location.pathname.replace(/^\//, "") ==
