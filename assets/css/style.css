@@ -94,7 +94,7 @@ h2 {
 .featured-image {
   width: 100%;
   max-height: 500px;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
 }
 
@@ -102,10 +102,18 @@ h2 {
   text-align: center;
 }
 
+.logo {
+  width: 15%;
+}
+
 @media screen and (max-width: 1000px) {
   main #content,
   main aside {
     width: 100%;
     padding: 0;
+  }
+
+  img.logo {
+    width: 100%;
   }
 }
