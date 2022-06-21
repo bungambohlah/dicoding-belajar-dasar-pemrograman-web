@@ -31,8 +31,14 @@ header nav {
   background-color: #027abb;
 }
 
-header nav li {
-  display: inline;
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+header nav ul li {
+  flex: 1 0 40%;
   list-style-type: none;
   margin-right: 20px;
 }
