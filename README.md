@@ -15,8 +15,8 @@ Project ini adalah Submission dari materi [Belajar Dasar Pemrograman Web](https:
 
 ## Preview
 
-<img src="screenshot/preview1.png">
-<img src="screenshot/preview2.png" width=256>
+<img src="screenshot/desktop.png" alt="Desktop View" />
+<img src="screenshot/mobile.png" width=256 alt="Mobile View" />
 
 ## Submission
 
