@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --high: #645caa;
+  --medium: #a084ca;
+  --light: #bface0;
+  --very-light: #ebc7e8;
+  --white: #ffffff;
+}
 
 * {
   box-sizing: border-box;
@@ -7,8 +15,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Quicksand", sans-serif;
-  background-color: #ecf4ff;
+  font-family: "Comfortaa", cursive;
+  background-color: var(--very-light);
 }
 
 header {
@@ -21,14 +29,14 @@ header .jumbotron {
   padding: 60px;
   text-align: center;
   color: white;
-  background-color: #00a6ff;
+  background-color: var(--medium);
 }
 
 header nav {
-  top: 0;
+  top: -1px;
   padding: 5px;
   position: sticky;
-  background-color: #027abb;
+  background-color: var(--high);
 }
 
 header nav ul {
@@ -77,12 +85,16 @@ main aside section img:hover {
 footer {
   padding: 10px;
   color: white;
-  background-color: #027abb;
+  background-color: var(--high);
   text-align: center;
 }
 
+footer a {
+  color: var(--white);
+}
+
 h2 {
-  color: #00a6ff;
+  color: var(--medium);
 }
 
 .rounded {
@@ -93,7 +105,7 @@ h2 {
   margin-top: 20px;
   padding: 30px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: var(--white);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
