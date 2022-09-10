@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>me.afif.dev - Afif Abdillah Jusuf</title>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="assets/js/script.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/slider.css">
 </head>
 
 <body>
@@ -19,8 +18,9 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#deskripsi">Deskripsi Tentang Saya</a></li>
-        <li><a href="#stats">Status Progress Saya</a></li>
+        <li><a href="#deskripsi">Deskripsi</a></li>
+        <li><a href="#stats">Status Progress</a></li>
+        <li><a href="#gallery">Foto Galeri</a></li>
       </ul>
     </nav>
   </header>
@@ -65,6 +65,26 @@
         <iframe src="https://github-readme-stats.vercel.app/api/top-langs/?username=bungambohlah&layout=compact"
           width="100%" style="border: 0;"></iframe>
       </article>
+
+      <article id="gallery" class="card">
+        <h2>Galeri Foto Favorit Saya</h2>
+        <!-- Container for the image gallery -->
+        <div class="slider-gallery">
+          <div id="slider-contents"></div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Image text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail images -->
+          <div class="thumbnail"></div>
+        </div>
+      </article>
     </div>
 
     <aside>
@@ -94,6 +114,10 @@
     <p>Copyright &copy; <span id="yearC"></span> by <a href="https://afif.dev" target="_blank"
         rel="noopener">afif.dev</a>. Under MIT License.</p>
   </footer>
+
+  <script src="assets/js/jquery-3.6.1.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/slider.js"></script>
 </body>
 
 </html>
