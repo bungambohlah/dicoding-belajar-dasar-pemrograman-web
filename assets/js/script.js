@@ -1,7 +1,9 @@
 $(document).ready(function () {
+  // set copyright from current year automatically
   const currentYear = new Date().getFullYear();
   $("#yearC").text(currentYear);
 
+  // animate the scroll while click navigation custom link
   $('a[href*="#"]').click(function (event) {
     if (
       location.pathname.replace(/^\//, "") ==
