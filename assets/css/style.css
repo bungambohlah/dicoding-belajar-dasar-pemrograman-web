@@ -37,18 +37,22 @@ header nav {
   padding: 5px;
   position: sticky;
   background-color: var(--high);
+  z-index: 999999;
 }
 
 header nav ul {
   display: flex;
+  width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 header nav ul li {
-  flex: 1 0 40%;
+  flex: 1 0 20%;
   list-style-type: none;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 header nav a {
